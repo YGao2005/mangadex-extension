@@ -1,6 +1,6 @@
 {
-    "name": "Hello Extensions",
-    "description": "Base Level Extension",
+    "name": "Mangadex Extension",
+    "description": "Keep track of your manga you're following.",
     "version": "1.0",
     "manifest_version": 3,
     "action": {

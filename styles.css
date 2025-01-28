@@ -4,9 +4,37 @@ body {
     background-color: #2C2C2C;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-h1 {
+h1, h2 {
     color: #FFFFFF;
     font-family: 'Poppins', sans-serif;
+    margin: 0 0 20px 0;
+}
+/* This manga container creates a scrollable area specifically for manga entries */
+.manga-container {
+    /* Sets the maximum height while leaving room for headers while filling in for the available space. */
+    max-height: 450px;
+    /* Enable scrolling when the content overflows (when the content goes off the page) */
+    overflow-y: auto;
+    /*Adds some space on the right to make the scrollbar look a little better */
+    padding-right: 10px;
+}
+/* Creates a scrollbar to match our manga interface theme. */
+.manga-container::-webkit-scrollbar {
+    /* Sets the width for the scrollbar */ 
+    width: 8px;
+}
+
+.manga-container::-webkit-scrollbar-track {
+    /* Styles the scrollbar to match the theme */
+    background: #3a3a3a;
+    border-radius: 4px;
+}
+
+.manga-container::-webkit-scrollbar-thumb {
+    
+    background: #555;
+    border-radius: 4px;
 }
