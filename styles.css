@@ -32,7 +32,7 @@ h1, h2 {
     background: #3a3a3a;
     border-radius: 4px;
 }
-
+/* Added a box to scrolls with on the scrollbar */
 .manga-container::-webkit-scrollbar-thumb {
     
     background: #555;
