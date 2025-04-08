@@ -12,6 +12,46 @@ h1, h2 {
     font-family: 'Poppins', sans-serif;
     margin: 0 0 20px 0;
 }
+
+.manga-searchbar {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #3a3a3a;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.search-input::placeholder {
+    color: #aaaaaa;
+}
+
+.serach-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #555;
+}
+
+.serach-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(50%);
+    background: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+
 /* This manga container creates a scrollable area specifically for manga entries */
 .manga-container {
     /* Sets the maximum height while leaving room for headers while filling in for the available space. */
@@ -32,7 +72,7 @@ h1, h2 {
     background: #3a3a3a;
     border-radius: 4px;
 }
-/* Added a box to scrolls with on the scrollbar */
+/* Added a box to scroll with on the scrollbar */
 .manga-container::-webkit-scrollbar-thumb {
     
     background: #555;
